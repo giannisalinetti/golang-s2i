@@ -7,8 +7,7 @@ MAINTAINER Gianni Salinetti <gbsalinetti@extraordy.com>
 
 # TODO: Rename the builder environment variable to inform users about application you provide them
 ENV GOPATH=/opt/app-root/go \
-    GOBIN=$HOME/go/bin \
-    PATH=$PATH:$GOBIN
+    PATH=$PATH:$GOPATH/bin
 
 # TODO: Set labels used in OpenShift to describe the builder image
 LABEL io.k8s.description="Platform for building Golang applications" \

@@ -21,7 +21,7 @@ fi
 
 echo "---> Installing application source..."
 cp -Rf /tmp/src/. $GOPATH/src/main
-ls -al $GOPATH/src/main
+
 echo "---> Building application from source..."
 cd $GOPATH/src/main
 
