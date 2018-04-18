@@ -1,0 +1,25 @@
+{
+    "kind": "ImageStream",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "go"
+    },
+    "spec": {
+        "dockerImageRepository": "infrastructure.lab.example.com:5000/golang-s2i",
+        "tags": [
+            {
+                "name": "latest",
+                "annotations": {
+                    "description": "Build and run Go applications.",
+                    "supports": "golang,golang:latest",
+                    "tags": "builder,golang",
+                    "version": "latest"
+                },
+                "from": {
+                    "kind": "ImageStreamTag",
+                    "name": "latest"
+                }
+            }
+        ]
+    }
+}
